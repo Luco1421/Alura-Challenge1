@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<title>Encriptador - Desencriptador</title>
+		<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+				    <li>
+				    	<a href="https://github.com/Luco1421">
+				    		<img src="img/github.png">
+				    		<p class="cont">Github</p>
+				    	</a>
+				    </li>
+				    <li>
+				    	<a href="https://discord.com/users/525441372766076990">
+				    		<img src="img/discord.png">
+				    		<p class="cont">Discord</p>
+				    	</a>
+				    </li>
+				    <li>
+				    	<a href="https://t.me/luco1421">
+				    		<img src="img/telegram.png">
+				    		<p class="cont">Telegram</p>
+				    	</a>
+				    </li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1 id="titulo">Cifrar / Descifrar</h1>
+			<textarea id="in" type="text" placeholder="Ingrese su mensaje: "></textarea>
+			<div id="resultado">
+    			<textarea id="out" readonly="readonly"></textarea>
+				<button onclick="copiar();" id="copy" tittle="copiar">
+				  <svg viewBox="0 0 512 512" class="svgIcon" height="1em"><path d="M288 448H64V224h64V160H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64zm-64-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z"></path></svg>
+				</button>
+			</div>
+			<div class="botones">
+				<button onclick="encriptar();" class="boton">Encriptar</button>
+				<button onclick="desencriptar();" class="boton">Desencriptar</button>
+			</div>
+		</main>
+	<script src="app.js"></script>
+	</body>
+</html>

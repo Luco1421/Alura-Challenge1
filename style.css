@@ -1,0 +1,137 @@
+body {
+	background: url(img/fondo.png);
+}
+
+nav {
+	width: 15%;
+	margin-top: 5px;
+	margin-left: 42%;
+	text-align: center;
+	background: rgba(0, 255, 125, 0.1);
+	border-radius: 15px;
+}
+
+nav li {
+	display: inline-block;
+	width: 75px;
+	margin: 0px auto 0 auto;
+}
+
+nav li:hover {
+	img {
+		transform: scale(1.1); 
+	}
+	p {
+		color: rgb(0,255,0);
+		font-size: 18px;
+	}
+}
+
+.cont {
+	padding: 5px;
+	margin-bottom: 5px;
+	font-family: consolas;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+#titulo {
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-weight: bold;
+	margin-top: 70px;
+	margin-bottom: 80px;
+	background: linear-gradient(rgb(0, 255, 255),rgb(0, 255,0));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 100px #ff00de;
+}
+
+#in {
+	margin-left: 10%;
+	width:29%;
+	height: 250px;
+	resize: none;
+	border-radius: 15px;
+	background-color: #222222;
+	border-color: rgb(0,255,0);
+	color: white;
+	font-family: consolas;
+	padding: 10px;
+	font-size: 22px;
+}
+
+#resultado {
+	display: inline-block;
+}
+
+#out {
+	margin-left: 395px;
+	width: 500px;
+	height: 250px;
+	resize: none;
+	border-radius: 15px;
+	background-color: rgba(22, 22, 22,0.5);
+	border-color: darkgray;
+	color: white;
+	font-family: consolas;
+	padding: 10px;
+	font-size: 22px;
+}
+
+#copy {
+  width: 50px;
+  height: 45px;
+  background-color: rgba(65, 64, 64, 0.9);
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  transition-duration: .5s;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.svgIcon path {
+  fill: darkgray;
+}
+
+#copy:hover {
+  box-shadow: 0px 0px 5px rgb(184, 236, 104),
+  0px 0px 10px rgb(184, 236, 104),
+  0px 0px 30px rgb(184, 236, 104);
+  transition-duration: .7s;
+}
+
+#copy:hover .svgIcon path {
+  fill: rgb(184, 236, 104);
+}
+
+.botones {
+	margin-top: 25px;
+	text-align: center;
+}
+
+.botones button {
+	margin-left: 40px;
+	width: 150px;
+  height: 50px;
+	background-color: rgba(65, 64, 64, 0.9);
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+	font-family: consolas;
+	margin-bottom: 40px;
+}
+
+.botones button:hover {
+  box-shadow: 0px 0px 5px rgb(184, 236, 104),
+  0px 0px 10px rgb(184, 236, 104),
+  0px 0px 30px rgb(184, 236, 104);
+  transition-duration: .7s;
+  color: rgb(184, 236, 104);
+}
